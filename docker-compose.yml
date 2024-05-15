@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  templateapinodeexpresstypescriptes6moduleslowdb:
+    image: templateapinodeexpresstypescriptes6moduleslowdb
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 4206:4206

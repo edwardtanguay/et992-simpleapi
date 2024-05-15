@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  templateapinodeexpresstypescriptes6moduleslowdb:
+    image: templateapinodeexpresstypescriptes6moduleslowdb
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 4206:4206
+      - 9229:9229
+    command: ["node", "--inspect=0.0.0.0:9229", "dist/index.js"]
